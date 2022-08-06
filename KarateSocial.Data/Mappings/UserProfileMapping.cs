@@ -15,7 +15,6 @@ namespace KarateSocial.Data.Mappings
             builder.HasOne(x => x.User)
                 .WithMany(p => p.UserProfiles)
                 .HasForeignKey(x => x.UserId);
-
             builder.HasOne(x => x.Profile)
                 .WithMany(p => p.UserProfiles)
                 .HasForeignKey(x => x.ProfileId);

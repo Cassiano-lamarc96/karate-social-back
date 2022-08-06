@@ -13,7 +13,6 @@ namespace KarateSocial.Data.Mappings
         {
             builder.Property(x => x.Id).IsRequired();
             builder.Property(x => x.Description).HasMaxLength(100);
-
             builder.HasOne(x => x.ProfileGroup)
                 .WithMany(x => x.Profiles)
                 .HasForeignKey(x => x.ProfileGroupId);
