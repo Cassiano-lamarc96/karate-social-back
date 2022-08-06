@@ -12,17 +12,7 @@ namespace KarateSocial.Application.AutoMapper
     {
         public AutoMapperSetup()
         {
-            #region ViewModelToDomain
-
-            CreateMap<UserViewModel, User>();
-
-            #endregion
-
-            #region DomainToViewModel
-
-            CreateMap<User, UserViewModel>();
-            
-            #endregion
+            CreateMap<UserViewModel, User>().ReverseMap();            
         }
     }
 }
