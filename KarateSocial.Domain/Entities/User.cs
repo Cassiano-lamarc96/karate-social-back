@@ -8,6 +8,8 @@ namespace KarateSocial.Domain.Entities
     {
         public Guid PersonId { get; set; }
 
+        public string Email { get; set; }
+        public string Password { get; set; }
         public virtual Person Person { get; set; }
         public virtual ICollection<UserProfile> UserProfiles { get; set; }
     }
