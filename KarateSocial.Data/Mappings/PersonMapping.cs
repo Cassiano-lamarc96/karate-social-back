@@ -15,7 +15,6 @@ namespace KarateSocial.Data.Mappings
             builder.Property(x => x.BirthDate).IsRequired();
             builder.Property(x => x.CPF).HasMaxLength(50).IsRequired();
             builder.Property(x => x.FullName).HasMaxLength(100).IsRequired();
-
             builder.HasMany(x => x.Users)
                 .WithOne(x => x.Person)
                 .HasForeignKey(x => x.PersonId);

@@ -1,4 +1,4 @@
-﻿using KarateSocial.Application.ViewModels.Person;
+﻿using KarateSocial.Application.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 

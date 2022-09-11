@@ -12,10 +12,11 @@ namespace KarateSocial.Data.Mappings
         public void Configure(EntityTypeBuilder<User> builder)
         {
             builder.Property(x => x.Id).IsRequired();
-
             builder.HasOne(x => x.Person)
                 .WithMany(x => x.Users)
                 .HasForeignKey(x => x.PersonId);
+            builder.Property(x => x.Email).IsRequired().HasMaxLength(100);
+            builder.Property(x => x.Password).IsRequired().HasMaxLength(50);            
         }
     }
 }
