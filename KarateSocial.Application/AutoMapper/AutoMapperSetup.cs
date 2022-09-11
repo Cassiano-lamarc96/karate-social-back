@@ -12,7 +12,9 @@ namespace KarateSocial.Application.AutoMapper
     {
         public AutoMapperSetup()
         {
-            CreateMap<UserViewModel, User>().ReverseMap();            
+            CreateMap<UserViewModel, User>().ReverseMap();      
+            CreateMap<PersonViewModel, StudentViewModel>().ReverseMap();
+            CreateMap<PersonViewModel, Person>().ReverseMap();
         }
     }
 }

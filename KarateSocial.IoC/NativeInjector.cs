@@ -14,12 +14,14 @@ namespace KarateSocial.IoC
             #region Services
 
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IPersonService, PersonService>();
             
             #endregion
 
             #region Repositories
             
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IPersonRepository, PersonRepository>();
             
             #endregion
         }

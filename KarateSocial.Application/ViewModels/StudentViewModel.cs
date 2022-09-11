@@ -4,8 +4,10 @@ using System.Text;
 
 namespace KarateSocial.Application.ViewModels
 {
-    public class PersonViewModel
+    public class StudentViewModel
     {
+        public int UserId { get; set; }
+        public string Senha { get; set; }
         public Guid Id { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime? DateUpdated { get; set; }
